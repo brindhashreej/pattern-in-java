@@ -1,0 +1,30 @@
+import java.util.*;
+class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int i, j, k;
+        for (i = a; i >= 1; i--) {
+            for (j = 1; j <= a ; j++) {
+                if (i == a || i == 1 || j == a || j == 1||i==j|| i+j==a+1) {
+                    System.out.print("*");
+                } else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+        for(i=a;i>=1;i--)
+        {
+            for(j=1;j<=a-i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(k=1;k<=2*i-1;k++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
